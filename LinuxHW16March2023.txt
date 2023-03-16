@@ -1,0 +1,33 @@
+5 directories, 6 files
+localhost:/home# cat /home/history.txt
+   0 ls -al
+   1 pwd
+   2 cd /home
+   3 mkdir -p /home/animals/dogs
+   4 touch animals/dogs/pluto.txt
+   5 cd animals
+   6 mkdir cats
+   7 touch cats/garfield.txt
+   8 cd animals
+   9 tree
+  10 mkdir fish
+  11 touch fish/nemo.txt
+  12 cd /tmp
+  13 touch tmp/adam.txt
+  14 tree
+  15 touch adam.txt
+  16 tree
+  17 mkdir -p /home/humans
+  18 cp /tmp/adam.txt /home/humans
+  19 cd /tmp
+  20 touch evA.txt
+  21 mv evA.txt opt/eve.txt
+  22 tree
+  23 mv evA.txt /opt/eve.txt
+  24 mv eve.txt /home/humans
+  25 cd /opt
+  26 tree
+  27 mv eve.txt /home/humans
+  28 cd /home
+  29 tree
+  30 history > history.txt
