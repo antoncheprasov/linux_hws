@@ -1,0 +1,42 @@
+localhost:~# mkdir -p /home/user/start/
+localhost:~# cd /home/
+localhost:/home# tree
+.
+└── user
+    └── start
+ 
+2 directories, 0 files
+localhost:/home# touch /home/user/start/1.txt
+localhost:/home# tree
+.
+└── user
+    └── start
+        └── 1.txt
+ 
+2 directories, 1 file
+localhost:/home# echo "Start" >> /home/user/start/1.txt
+localhost:/home# date +'%d/%m/%Y' >> /home/user/start/1.txt
+localhost:/home# head /home/user/start/1.txt
+Start
+23/03/2023
+
+localhost:/home# mkdir -p /home/opt/task/
+localhost:/home# touch /home/opt/task/start.txt
+localhost:/home# tree
+.
+├── opt
+│   └── task
+│       └── start.txt
+└── user
+    └── start
+        └── 1.txt
+ 
+4 directories, 2 files
+localhost:/home# cp /home/user/start/1.txt /home/opt/task/start.txt
+localhost:/home# ls -al | tail -n 4 >> /opt/task/start.txt
+
+ 
+ 
+ 
+ 
+ 
