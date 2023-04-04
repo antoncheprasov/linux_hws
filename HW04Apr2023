@@ -1,33 +1,6 @@
 vi /tmp/file.txt
 :wq
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
+
 localhost:~# df -h | head -3 >> /tmp/file.txt
 localhost:~# head /tmp/file.txt
  
