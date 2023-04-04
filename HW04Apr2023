@@ -1,0 +1,39 @@
+vi /tmp/file.txt
+:wq
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+localhost:~# df -h | head -3 >> /tmp/file.txt
+localhost:~# head /tmp/file.txt
+ 
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 4.9G      2.3G      2.6G  47% /
+devtmpfs                 91.3M         0     91.3M   0% /dev
+localhost:~# chmod g+w /tmp/file.txt
+localhost:~# chmod u-r /tmp/file.txt
+localhost:~# chmod go+x /tmp/file.txt
