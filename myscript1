@@ -1,0 +1,13 @@
+cd /opt/280223_m/Anton_Cheprasov/
+nano myscript.sh
+ls -l
+chmod u+x myscript.sh
+ls -l
+nano myscrip.sh
+#!/bin/bash
+touch /tmp/Anton_Cheprasov.txt
+echo $(date) >> /tmp/Anton_Cheprasov.txt
+tail -n 3 /etc/group | sed "s/user/Anton_Cheprasov/g" >> /tmp/Anton_Cheprasov.txt
+echo "done"
+./myscript.sh
+head /tmp/Anton_Cheprasov.txt
