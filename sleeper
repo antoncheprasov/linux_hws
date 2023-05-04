@@ -1,0 +1,166 @@
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/280223_m/
+[ec2-user@ip-172-31-33-20 280223_m]$ ls =l
+ls: cannot access =l: No such file or directory
+[ec2-user@ip-172-31-33-20 280223_m]$ ls -l
+total 4
+drwxrwxr-x 2 ec2-user ec2-user   43 May  2 12:08 Anton_Cheprasov
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr 19 11:00 Julia_logo
+drwxrwxr-x 2 ec2-user ec2-user   49 Apr 29 09:57 Safonova_Galina
+drwxrwxr-x 2 ec2-user ec2-user   83 May  3 20:03 Tatsiana_Kellermann
+drwxrwxr-x 2 ec2-user ec2-user   42 Apr 20 12:15 VAndreev
+drwxrwxr-x 2 ec2-user ec2-user   27 May  3 15:10 VSadovici
+drwxrwxr-x 2 ec2-user ec2-user   25 May  1 16:37 alena_bilko
+drwxrwxr-x 2 ec2-user ec2-user   95 May  2 12:22 alexgor
+drwxrwxr-x 2 ec2-user ec2-user   84 May  2 12:37 chumak
+drwxrwxr-x 2 ec2-user ec2-user   25 Apr 26 17:46 janisludborz
+drwxrwxr-x 2 ec2-user ec2-user    6 Apr 20 12:32 julia
+drwxrwxr-x 2 ec2-user ec2-user   47 May  2 12:07 lidasuchkova
+drwxrwxr-x 2 ec2-user ec2-user   25 Apr 28 21:40 marina_melnikova
+drwxrwxr-x 2 ec2-user ec2-user   60 Apr 30 21:04 marz
+drwxrwxr-x 2 ec2-user ec2-user 4096 May  3 13:04 walter_bruch
+drwxrwxr-x 2 ec2-user ec2-user   86 May  2 12:22 zhanna_osipenko
+[ec2-user@ip-172-31-33-20 280223_m]$ cd /opt/280223_m/Anton_Cheprasov
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ls -l
+total 12
+-rw-rw-r-- 1 ec2-user ec2-user  12 May  2 12:16 anton1.txt
+-rwxrw-r-- 1 ec2-user ec2-user 179 Apr 27 19:44 myscript.sh
+-rw-rw-r-- 1 ec2-user ec2-user  99 May  4 12:06 sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ chmod u+x sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ client_loop: send disconnect: Broken pipe
+anton@Antons-MacBook-Pro ~ % ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+Last login: Thu May  4 12:16:40 2023 from dynamic-046-114-179-092.46.114.pool.telefonica.de
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+2 package(s) needed for security, out of 3 available
+Run "sudo yum update" to apply all updates.
+-bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+manpath: can't set the locale; make sure $LC_* and $LANG are correct
+[ec2-user@ip-172-31-33-20 ~]$ cd /opt/280223_m/Anton_Cheprasov
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ./sleeper.sh
+12:21:44
+4
+12:21:49
+4
+12:21:54
+4
+12:21:59
+4
+12:22:04
+4
+12:22:09
+4
+12:22:14
+4
+12:22:20
+4
+12:22:25
+4
+12:22:30
+4
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat /etc/os=release
+cat: /etc/os=release: No such file or directory
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat /etc/os-release
+NAME="Amazon Linux"
+VERSION="2"
+ID="amzn"
+ID_LIKE="centos rhel fedora"
+VERSION_ID="2"
+PRETTY_NAME="Amazon Linux 2"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2"
+HOME_URL="https://amazonlinux.com/"
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD EPYC 7571
+stepping	: 2
+microcode	: 0x800126e
+cpu MHz		: 2199.802
+cache size	: 512 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt nrip_save
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed
+bogomips	: 4399.60
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD EPYC 7571
+stepping	: 2
+microcode	: 0x800126e
+cpu MHz		: 2199.802
+cache size	: 512 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt nrip_save
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed
+bogomips	: 4399.60
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ 
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat /opt/280223_m/Anton_Cheprasov/cpuinfo.txt
+vendor_id	: AuthenticAMD
+vendor_id	: AuthenticAMD
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ 
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.txt
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ uname -a | awk '{print $1}'
+Linux
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.txt
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ chmod u+x script11.txt
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.txt
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ chmod u+x script11.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ./script11.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat script11.txt
+#!/bin/bash
+#
+uname -a | awk '{print $1}' > /opt/280223_m/Anton_Cheprasov/awk.txt 
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ls -l
+total 28
+-rw-rw-r-- 1 ec2-user ec2-user  12 May  2 12:16 anton1.txt
+-rw-rw-r-- 1 ec2-user ec2-user   6 May  4 12:53 awk.txt
+-rw-rw-r-- 1 ec2-user ec2-user  50 May  4 12:34 cpuinfo.txt
+-rwxrw-r-- 1 ec2-user ec2-user 179 Apr 27 19:44 myscript.sh
+-rwxrw-r-- 1 ec2-user ec2-user  83 May  4 12:53 script11.sh
+-rwxrw-r-- 1 ec2-user ec2-user  83 May  4 12:52 script11.txt
+-rwxrw-r-- 1 ec2-user ec2-user 204 May  4 12:33 sleeper.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.sh
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat awk.txt
+Linux
+[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ 
