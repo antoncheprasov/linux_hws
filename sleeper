@@ -1,62 +1,18 @@
-[ec2-user@ip-172-31-33-20 280223_m]$ cd /opt/280223_m/Anton_Cheprasov
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano sleeper.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ls -l
-total 12
--rw-rw-r-- 1 ec2-user ec2-user  12 May  2 12:16 anton1.txt
--rwxrw-r-- 1 ec2-user ec2-user 179 Apr 27 19:44 myscript.sh
--rw-rw-r-- 1 ec2-user ec2-user  99 May  4 12:06 sleeper.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ chmod u+x sleeper.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano sleeper.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano sleeper.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ./sleeper.sh
-12:21:44
-4
-12:21:49
-4
-12:21:54
-4
-12:21:59
-4
-12:22:04
-4
-12:22:09
-4
-12:22:14
-4
-12:22:20
-4
-12:22:25
-4
-12:22:30
-4
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat /proc/cpuinfo
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat /opt/280223_m/Anton_Cheprasov/cpuinfo.txt
-vendor_id	: AuthenticAMD
-vendor_id	: AuthenticAMD
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ 
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.txt
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ uname -a | awk '{print $1}'
-Linux
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.txt
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ chmod u+x script11.txt
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.txt
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ chmod u+x script11.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ./script11.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat script11.txt
 #!/bin/bash
-#
-uname -a | awk '{print $1}' > /opt/280223_m/Anton_Cheprasov/awk.txt 
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ ls -l
-total 28
--rw-rw-r-- 1 ec2-user ec2-user  12 May  2 12:16 anton1.txt
--rw-rw-r-- 1 ec2-user ec2-user   6 May  4 12:53 awk.txt
--rw-rw-r-- 1 ec2-user ec2-user  50 May  4 12:34 cpuinfo.txt
--rwxrw-r-- 1 ec2-user ec2-user 179 Apr 27 19:44 myscript.sh
--rwxrw-r-- 1 ec2-user ec2-user  83 May  4 12:53 script11.sh
--rwxrw-r-- 1 ec2-user ec2-user  83 May  4 12:52 script11.txt
--rwxrw-r-- 1 ec2-user ec2-user 204 May  4 12:33 sleeper.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ nano script11.sh
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ cat awk.txt
-Linux
-[ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ 
+
+DATE=$(date +'%H:%M:%S')
+
+for i in {1..10}
+do 
+date +'%H:%M:%S'
+ps -f | grep -vw UID | wc -l
+
+sleep 5
+done
+
+cat /proc/cpuinfo | grep -w vendor_id >> /opt/280223_m/Anton_Cheprasov/cpuinfo.txt
+cat /proc/cpuinfo | grep '^NAME=' | cut -d= -f2 > /opt/280223_m/Anton_Cheprasov/cpuinfo.txt
+
+for ((i=50;i<=100;i++)); do
+    touch "${i}.txt"
+done
