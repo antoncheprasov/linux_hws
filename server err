@@ -1,0 +1,4 @@
+crontab: installing new crontab
+"/tmp/crontab.e1g6kv":1: bad minute
+errors in crontab file, can't install.
+Do you want to retry the same edit? 
