@@ -2,10 +2,11 @@ cd /opt/280223_m/Anton_Cheprasov/
 nano taskANTON.sh
 
 #!/bin/bash
+
 for ((i=1; i<=10; i++))
 do
-  filename=$(date +"%d%m%y")_$i
-  touch "$filename"
+  filename=$(date +"%H%M%S")_$i
+  touch /opt/280223_m/Anton_Cheprasov/"$filename"
 done
 
 
@@ -23,4 +24,6 @@ total 40
 -rwxrw-r-- 1 ec2-user ec2-user 352 May  6 18:03 sleeper.sh
 -rwxrw-r-- 1 ec2-user ec2-user  98 May 10 18:16 taskANTON.sh
 [ec2-user@ip-172-31-33-20 Anton_Cheprasov]$ crontab -e
+*/15 * * * * /opt/280223_m/Anton_Cheprasov/taskANTON.sh
+crontab -l
 */15 * * * * /opt/280223_m/Anton_Cheprasov/taskANTON.sh
